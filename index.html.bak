@@ -160,9 +160,9 @@
           </div>
 		  <div class="skills1">
             <div class="skillimage">
-              <img class="skillimg" src="./images/npmyarn.png" alt="">
+              <img class="skillimg" src="./images/npm.png" alt="">
             </div>
-            <div class="skillt">npm and yarn</div>
+            <div class="skillt">npm</div>
           </div>
           <div class="skills1">
             <div class="skillimage">
