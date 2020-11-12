@@ -152,6 +152,18 @@
             </div>
             <div class="skillt">WordPress</div>
           </div>
+		  <div class="skills1">
+            <div class="skillimage">
+              <img class="skillimg" src="./images/firebase.png" alt="">
+            </div>
+            <div class="skillt">Firebase</div>
+          </div>
+		  <div class="skills1">
+            <div class="skillimage">
+              <img class="skillimg" src="./images/npmyarn.png" alt="">
+            </div>
+            <div class="skillt">npm and yarn</div>
+          </div>
           <div class="skills1">
             <div class="skillimage">
               <img class="skillimg" src="./images/asp.png" alt="">
