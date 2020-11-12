@@ -1,0 +1,517 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    height: 20vh;
+    position: relative;
+    width: 100%;
+    line-height: 60px;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    width: 20%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: crimson;
+    padding-top: 20px;
+    text-align: center;
+    
+    
+   
+}
+nav ul {
+    padding-top: 0;
+    line-height: 30px;
+    list-style: none;
+    
+    overflow: hidden;
+    color: crimson;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+
+}
+
+nav.black ul {
+    
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px 30px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: crimson;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    line-height: 30px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 5px 5px;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+@media(max-width: 768px) {
+
+    .logo {
+          position: relative;
+          
+          display: none;
+    }
+    nav{
+        height: 7vh;
+    }
+
+    nav ul {
+          max-height: 10px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+}
+
+main{
+    width: 100%;
+    height: 70vh;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+}
+section{
+
+}
+
+section h3{
+    font-size: 30px;
+     font-weight: 300;
+     letter-spacing: 5px;
+     word-spacing: 5px;
+     text-shadow: 1px 1px 2px black;
+}
+
+section h2{
+    font-size: 55px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-shadow: 2px 1px  5px black;
+    text-transform: uppercase;
+}
+@media (max-width: 768px){
+    header{
+        height: 80vh;
+    }
+    main{
+        height: 30vh;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    section h3{
+        font-size:24px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+    section h2{
+        font-size: 38px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: wheat;
+}
+
+section .btn{
+    background: crimson;
+    color: #000;
+}
+section h1{
+    font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+.change-context:after{
+    text-transform: uppercase;
+    content: '';
+    animation: changeme 10s infinite linear;
+    color: crimson;
+}
+@keyframes changeme{
+    0% {content: "Programmer";}
+    33% {content: "Front End Web developer";}
+    66% {content: "Web Designer";}
+    100% {content: "Python Programmer";}
+}
+@media (max-width: 768px){
+    section h1{
+        font-size: 24px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+
+    }
+}
+.headings{
+    font-size: 48px;
+      color: black;
+      text-align: center;
+      text-decoration: underline greenyellow;
+       }
+@media (max-width: 768px){
+    .headings{
+        font-size: 24px;
+    }
+}
+    .myself{
+      /* background-color: gray; */
+      background: crimson;
+      height: 420px;
+      width:100%;
+      overflow:auto;
+      
+    }
+    @media (max-width: 768px){
+        .myself{
+            height: 660px;
+        }
+    }
+    .flexp{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    @media (max-width: 768px){
+        .flexp{
+            display: block;
+        }
+    }
+    .myimg{
+        width: 33%;
+      height: 300px;
+      margin-left: 20px;
+      border-radius: 20%;
+    
+    }
+    @media (max-width: 768px){
+        .myimg{
+            display: none;
+        }
+    }
+    .hii{
+        height: 300px;
+        width: 350px;
+        border: 2px solid gray;
+        border-radius: 30%;
+        margin-left: 40px;
+    }
+    .myinfo{
+        width: 40%;
+      padding-left: 50px;
+      padding-top: 30px;
+      color: blanchedalmond;
+      font-size:x-large;
+    }
+    .infocont{
+        color: white;
+        font-size: 28px;
+        line-height: 40px ;
+    }
+    .infocont1{
+        color: white;
+        font-size: 24px;
+        align-items: center;
+        line-height: 40px ;
+    }
+    @media (max-width: 768px){
+        .myinfo{
+            width:100%;
+        }
+        .infocont{
+            line-height: 34px;
+        }
+        
+       
+    }
+    .Education{
+        height: 220px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .Education:hover{
+        display: inline-block;
+        margin: 0 0.5rem;
+      
+        animation: heartBeat;
+        animation-duration: 2s;
+
+    }
+    .edutext{
+        font-size: 24px;
+        color: black;
+        text-transform: capitalize;
+    }
+    .course{
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+    @media (max-width: 768px){
+
+        .edutext{
+            font-size: 20px;
+        }
+        .course{
+            font-size: 20px;
+        }
+    }
+    
+    .skills1{
+        display: flex;
+        flex-wrap: nowrap;
+        
+       
+    }
+    .skillt{
+        padding: 25px 25px;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+
+
+
+    
+      .skillimg{
+        margin-left: 40px;
+        height: 70px;
+        width: 70px;
+      } 
+
+      @media (max-width: 768px){
+        .skillt{
+            font-size: 18px;
+
+        }
+        .skillimg{
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+      .projects{
+          display: flex;
+          flex-wrap: nowrap;
+          padding-left: 20px;
+          padding-bottom: 20px;
+          margin-right: 20px;
+          justify-content: center;
+      }
+      @media (max-width: 768px){
+        .projects{
+            display: block;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            justify-content: center;
+            
+        }
+    }
+      .card{
+          width: 400px;
+          margin-right: 20px;
+          margin-left: 40px;
+      }
+      .card:hover{
+        display: inline-block;
+        margin: 0 0.5rem;
+      
+        animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s;
+      }
+      @media (max-width: 768px){
+       .card{
+           margin-bottom: 20px;
+           
+       }
+    }
+      .card-title{
+          font-size: 24px;
+          font-weight: 600;
+          text-transform: uppercase;
+
+      }
+
+
+
+      .footerform{
+        background-color: crimson;
+      
+        height: 500px;
+        width: 100%;
+        color: white;
+      }
+      .footerform{
+          display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+      .Getin{
+          padding-top: 15px;
+          padding-left: 15px;
+          float: left;
+      }
+      form{
+        font-size: large;
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      
+      input{
+        height: 40px;
+        width: 350px;
+        background-color: grey;
+        
+        border-style: none;
+        
+      }
+      @media (max-width: 768px){
+        .footerform{  
+            height: 750px;
+        display: block;
+        }
+      }
+      .abd{
+          background-color: white;
+          border-radius: 2%;
+      }
+      .abd:hover{
+          background-color: black;
+          color: white;
+      }
+      
+      .socialicons{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: x-large;
+        color: blanchedalmond;
+        padding-top: 5px;
+          padding-left: 50px;
+          justify-content: center;
+        
+      }
+      li{
+        list-style: none;
+        padding-top: 30px;
+        padding-left: 60px;
+      }
+      ul li a{
+          font-size: 24px;
+      }
+      @media (max-width: 768px){
+          .socialicons{
+              padding-left: 30px;
+              margin-top: 30px;
+          }
+      }
+
+      /* .projects{
+         
+          
+          margin-top: 20px;
+          display: flex;
+          flex-wrap: nowrap;
+      }
+      .card-body{
+        margin-left: 20px;
+       
+        margin-top: 20px;
+          
+      }
+      .card{
+        width: 400px;
+        height: 450px;
+        border: 1px solid gray ;
+        border-radius: 2%;
+      }
+      .card-title{
+          font-size: x-large;
+          padding-left: 20px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          text-transform: uppercase;
+      }
+      .card-text{
+          font-size: large;
+          padding-left: 20px;
+      }
+      button{
+          margin-left: 20px;
+          border-style: none;
+          background-color: crimson;
+          color: white;
+          font-size: large;
+          height: 50px;
+          width: 120px;
+          border-radius: 5%;
+      }
+      img{
+          margin-left: 5px;
+          margin-right: 5px;
+        height: 250px;
+          width: 390px;
+      } */
